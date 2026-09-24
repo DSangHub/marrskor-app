@@ -4,148 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marrskor — Your car’s maintenance Skor. Free for owners.</title>
-  <meta name="description" content="Marrskor tracks scheduled maintenance and shop-verified repairs, builds a 0–100 Skor. Free for owners. Nationwide." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@16..72,500;16..72,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@16..72,500;16..72,600&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <div class="wrap nav">
       <a class="brand" href="#top"><span class="mark">M</span>
-        <span class="lockup lockup-sm"><span class="rec">Maintenance and Repair Records</span> <span class="skor">SKOR</span></span>
+        <span class="lockup lockup-sm"><span class="rec" data-i18n="brand_rec">Maintenance and Repair Records</span> <span class="skor">SKOR</span></span>
       </a>
       <nav class="links">
-        <a href="#benefits">Benefits</a>
-        <a href="#own">Prove it’s yours</a>
-        <a href="#how">How it works</a>
-        <a href="#skor">The Skor</a>
-        <a href="#sell">Sell & trade-in</a>
-        <a href="#faq">FAQ</a>
-        <a href="#shops">For shops</a>
+        <a href="#benefits" data-i18n="nav_benefits">Benefits</a>
+        <a href="#own" data-i18n="nav_own">Prove it’s yours</a>
+        <a href="#how" data-i18n="nav_how">How it works</a>
+        <a href="#skor" data-i18n="nav_skor">The Skor</a>
+        <a href="#sell" data-i18n="nav_sell">Sell & trade-in</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#shops" data-i18n="nav_shops">For shops</a>
       </nav>
-      <a class="btn btn-gold" href="#join">Get your free Skor</a>
+      <div class="nav-end">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="btn btn-gold" href="#join" data-i18n="nav_cta">Get your free Skor</a>
+      </div>
     </div>
   </header>
   <main id="top">
     <section class="wrap hero">
       <div>
-        <div class="eyebrow">Free for owners · Nationwide</div>
-        <p class="lockup lockup-hero"><span class="rec">Maintenance and Repair Records</span> <span class="skor">SKOR</span></p>
-        <h1>Every oil change should count when you sell the car.</h1>
-        <p class="lede">Marrskor turns scheduled maintenance and shop-verified repairs into a 0–100 Skor and a 1–5 star rating. Keep the record. Share it at sale or trade-in. Never miss a service again.</p>
+        <div class="eyebrow" data-i18n="hero_eye">Free for owners · Nationwide</div>
+        <p class="lockup lockup-hero"><span class="rec" data-i18n="brand_rec">Maintenance and Repair Records</span> <span class="skor">SKOR</span></p>
+        <h1 data-i18n="hero_h1">Every oil change should count when you sell the car.</h1>
+        <p class="lede" data-i18n="hero_lede">Marrskor turns scheduled maintenance and shop-verified repairs into a 0–100 Skor and a 1–5 star rating.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#join">Create a free owner account</a>
-          <a class="btn btn-ghost" href="#how">See how Skor is earned</a>
+          <a class="btn btn-gold" href="#join" data-i18n="hero_cta">Create a free owner account</a>
+          <a class="btn btn-ghost" href="#how" data-i18n="hero_secondary">See how Skor is earned</a>
         </div>
-        <div class="pills">
-          <span class="pill">Owners: always free</span>
-          <span class="pill">Works in all 50 states</span>
-          <span class="pill">Perfect Skor = 100</span>
-          <span class="pill">Shop-verified records</span>
-          <span class="pill">VIN claim + address blocked</span>
-        </div>
-      </div>
-      <aside class="card" aria-label="Sample Marrskor report">
-        <div class="skor-top">
-          <div>
-            <div class="eyebrow">Sample report</div>
-            <h3 style="margin:6px 0 2px">2019 Toyota Camry</h3>
-            <div class="meta">84,210 miles · 1 owner · VIN ending 4C29</div>
-            <div class="stars" style="margin-top:10px">★★★★★</div>
-            <div class="meta">5-star care · last 12 months on schedule</div>
-          </div>
-          <div class="gauge" aria-hidden="true"><div class="inner"><strong>92</strong><span class="skor">SKOR</span></div></div>
-        </div>
-        <div class="timeline">
-          <div class="row"><span class="tag">Sep 2026</span><span>Synthetic oil + rotation · Peak Auto</span><span class="ok">On time</span></div>
-          <div class="row"><span class="tag">Apr 2026</span><span>Brake pads, front · Peak Auto</span><span class="ok">Verified</span></div>
-          <div class="row"><span class="tag">Jan 2026</span><span>Cabin filter + inspection</span><span class="ok">On time</span></div>
-          <div class="row"><span class="tag">Due Oct</span><span>60k transmission service</span><span style="color:var(--warn);font-size:12px;font-weight:600">Reminder set</span></div>
-        </div>
-      </aside>
-    </section>
-    <section id="benefits" class="wrap">
-      <div class="sec-h">
-        <div class="eyebrow">Why owners use Marrskor</div>
-        <h2>A living service record that adds weight at the appraisal desk.</h2>
-        <p class="lede">Buyers and dealers already pay more attention to documented care than to a stack of faded receipts.</p>
-      </div>
-      <div class="grid-3">
-        <article class="feature"><h3>Skor + stars, not a shoebox</h3><p>Every on-schedule service earns Skor points and a 1–5 star mark. A perfect Skor is 100.</p></article>
-        <article class="feature"><h3>Reminders before things get expensive</h3><p>Marrskor tracks intervals by miles and months, then nudges you before service slips.</p></article>
-        <article class="feature"><h3>Book a network shop in one tap</h3><p>Participating shops can receive your reminder and offer an appointment.</p></article>
-        <article class="feature"><h3>Repairs count</h3><p>Shop-verified repairs add points toward your stars. Documented work beats a blank history.</p></article>
-        <article class="feature"><h3>Sale-ready packet</h3><p>Share Skor, stars, and shop stamps at sale or trade-in. The next owner can inherit it.</p></article>
-        <article class="feature"><h3>Prove the car is yours</h3><p>Claim a VIN with a registration snapshot. Street address is blocked. Nobody else can write that Skor.</p></article>
-      </div>
-    </section>
-    <section id="own" class="wrap">
-      <div class="sec-h">
-        <div class="eyebrow">Ownership lock</div>
-        <h2>The Skor belongs to the person who can prove the car.</h2>
-        <p class="lede">A typed VIN is not proof. Address is never stored.</p>
-      </div>
-    </section>
-    <section id="how" class="wrap">
-      <div class="sec-h"><div class="eyebrow">Four steps</div><h2>How your Skor is built</h2></div>
-      <div class="grid-2">
-        <article class="step"><div class="num">1</div><h3>Claim the VIN</h3><p>Photograph the VIN, then prove ownership with a redacted registration photo or a digital DMV credential.</p></article>
-        <article class="step"><div class="num">2</div><h3>Get reminded</h3><p>When a service window opens, you get a reminder.</p></article>
-        <article class="step"><div class="num">3</div><h3>Shops verify the job</h3><p>Network shops stamp what was done, at what mileage.</p></article>
-        <article class="step"><div class="num">4</div><h3>Share it when you sell</h3><p>Hand the buyer or appraiser your Marrskor report.</p></article>
-      </div>
-    </section>
-    <section id="skor" class="wrap">
-      <div class="sec-h">
-        <div class="eyebrow">The scoring idea</div>
-        <h2>100 is earned. Gaps cost you. Honesty pays.</h2>
-      </div>
-    </section>
-    <section id="sell" class="wrap">
-      <div class="sec-h">
-        <div class="eyebrow">Selling or trading in</div>
-        <h2>Bring a score, not a story.</h2>
       </div>
     </section>
     <section class="wrap" id="join">
       <div class="cta-band">
         <div>
-          <div class="eyebrow">Owner waitlist</div>
-          <h2>Get your free Skor when we open nationwide.</h2>
+          <h2 data-i18n="join_h2">Get your free Skor when we open nationwide.</h2>
         </div>
-        <form action="#" method="post" onsubmit="event.preventDefault(); this.querySelector('.thanks').style.display='block';">
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <button class="btn btn-gold" type="submit">Join free as an owner</button>
-          <p class="thanks" style="display:none;color:var(--good);font-size:14px">You’re on the list.</p>
+        <form action="#" method="post" onsubmit="event.preventDefault();">
+          <button class="btn btn-gold" type="submit" data-i18n="join_btn">Join free as an owner</button>
         </form>
       </div>
     </section>
-    <section id="faq" class="wrap">
-      <div class="sec-h"><div class="eyebrow">Questions</div><h2>Straight answers</h2></div>
-      <div class="grid-2">
-        <details class="faq" open><summary>Is Marrskor really free for owners?</summary><p>Yes. Shops pay to join the network.</p></details>
-        <details class="faq"><summary>Do you store my home address?</summary><p>No. The address block is blacked out before the image is saved.</p></details>
-      </div>
-    </section>
-    <section id="shops" class="wrap" style="padding-top:20px">
-      <div class="card" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center">
-        <div>
-          <div class="eyebrow">Repair shops</div>
-          <h3 style="margin:6px 0 8px">Join the network. Get the reminder. Fill the bay.</h3>
-          <p style="color:var(--muted);max-width:560px">Network $19.95/mo. Lead $49.95/mo.</p>
-        </div>
-        <a class="btn btn-ghost" href="mailto:shops@marrskor.app">Ask about shop access</a>
-      </div>
+    <section id="shops" class="wrap">
+      <a class="btn btn-ghost" href="mailto:shops@marrskor.app" data-i18n="shop_cta">Ask about shop access</a>
     </section>
   </main>
   <footer>
     <div class="wrap foot">
-      <div>© 2026 <span class="lockup lockup-sm"><span class="rec">Maintenance and Repair Records</span> <span class="skor">SKOR</span></span> · marrskor.app</div>
-      <div>Owners free · Shops by subscription · Records follow the VIN</div>
+      <div data-i18n="foot_note">Owners free · Shops by subscription · Records follow the VIN</div>
     </div>
   </footer>
+  <script src="i18n.js"></script>
 </body>
 </html>
